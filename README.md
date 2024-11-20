@@ -27,7 +27,5 @@ Este projeto é uma aplicação de loja virtual desenvolvida em Angular, utiliza
 - Design simples e intuitivo para facilitar a navegação.
 
 --- 
-<br>
-
 **Desenvolvido por Luis Felipe Cortêz** <br>
 *Licensa MIT*
