@@ -1,26 +1,62 @@
 {
   "usuarios": [
-    {
-      "id": "e97b",
-      "nome": "Luis Felipe",
-      "email": "felipecortez217@gmail.com",
-      "senha": "123",
-      "tipo": "cliente"
-    },
-    {
-      "id": "7775",
-      "nome": "Luis Felipe",
-      "email": "felipecortez217@gmail.com",
-      "senha": "123",
-      "tipo": "cliente"
-    },
-    {
-      "id": "c767",
-      "nome": "Luis Felipe",
-      "email": "felipecortez217@gmail.com",
-      "senha": "123",
-      "tipo": "cliente"
-    }
   ],
-  "produtos": []
+  "produtos": [
+    {
+      "id": "a223",
+      "nome": "X-BACON",
+      "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
+      "preco": 25.00,
+      "categoria": "HAMBURGUER"
+    },
+    {
+      "id": "a223",
+      "nome": "X-BACON",
+      "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
+      "preco": 25.00,
+      "categoria": "HAMBURGUER"
+    },
+    {
+      "id": "a223",
+      "nome": "X-BACON",
+      "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
+      "preco": 25.00,
+      "categoria": "HAMBURGUER"
+    },
+    {
+      "id": "a223",
+      "nome": "X-BACON",
+      "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL/BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
+      "preco": 25.00,
+      "categoria": "HAMBURGUER"
+    },
+    {
+      "id": "a223",
+      "nome": "CALABRESA",
+      "descricao": "CALABRESA/TOMATE/QUEIJO MUSSARELA",
+      "preco": 50.00,
+      "categoria": "PIZZA"
+    },
+    {
+      "id": "a223",
+      "nome": "CALABRESA",
+      "descricao": "CALABRESA/TOMATE/QUEIJO MUSSARELA",
+      "preco": 50.00,
+      "categoria": "PIZZA"
+    },
+    {
+      "id": "a223",
+      "nome": "CALABRESA",
+      "descricao": "CALABRESA/TOMATE/QUEIJO MUSSARELA",
+      "preco": 50.00,
+      "categoria": "PIZZA"
+    },
+    {
+      "id": "a223",
+      "nome": "CALABRESA",
+      "descricao": "CALABRESA/TOMATE/QUEIJO MUSSARELA",
+      "preco": 50.00,
+      "categoria": "PIZZA"
+    }
+  ]
 }

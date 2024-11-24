@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -10,8 +13,14 @@ body {
 body {
   margin: 0;
   background: var(--white);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Arial Narrow', Arial, sans-serif;
+  font-family: "Poppins", sans-serif
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 h1 {
   font-size: 22px;
@@ -28,12 +37,12 @@ h3,
 a {
   color: var(--white);
   text-decoration: none;
+  margin: 0;
 }
 
 p {
   color: var(--white);
   font-size: 16px;
-  margin: 10px 0;
 }
 
 ul {

@@ -1,0 +1,14 @@
+<app-header></app-header>
+<aside>
+<p>Cohama, Rua do Aririzal, Nº 121</p>
+<p>Sem pedido minino</p>
+</aside>
+<main>
+  <div *ngFor="let categoria of categorias()" class="categoria">
+    <h1>{{categoria}}</h1>
+    <div class="produtos">
+      <app-card-produto *ngFor="let produto of produtosPorCategoria[categoria]" [produto]="produto"></app-card-produto>
+    </div>
+  </div>
+</main>
+<app-footer></app-footer>
