@@ -1,0 +1,18 @@
+:root {
+  button {
+    cursor: pointer;
+    background-color: var(--primary-010);
+    color: var(--white);
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid var(--primary);
+    box-shadow: 1px 1px 2px var(--primary-010);
+    padding: 10px 50px;
+    transition: .5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

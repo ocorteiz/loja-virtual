@@ -1,0 +1,23 @@
+<div class="text">
+  <img src="../../../assets/logo.png" alt="">
+  <h1>Cortêz <br> Delivery</h1>
+</div>
+<div class="form register">
+  <h1>Ola, ficamos felizes com sua volta</h1>
+  <p class="p">Faça seu login</p>
+  <form (ngSubmit)="onLogin()">
+    <label>
+      <input placeholder="Email" type="email" [(ngModel)]="user.email" name="email" required />
+    </label>
+
+    <label>
+      <input placeholder="Senha" type="password" [(ngModel)]="user.senha" name="senha" required />
+    </label>
+
+    <div *ngIf="errors.length > 0" class="error-message">
+      <p *ngFor="let error of errors" class="errors">{{error}}</p>
+    </div>
+
+    <button type="submit">Cadastrar</button>
+  </form>
+</div>

@@ -1,0 +1,25 @@
+input {
+  color: var(--primary);
+
+  outline: none;
+  font-weight: 300;
+  margin: 10px;
+  width: 300px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 1px solid var(--primary);
+  box-shadow: 1px 1px 2px var(--primary-010);
+  transition: .5s;
+
+  &:focus {
+    color: var(--primary);
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+input::placeholder {
+  color: var(--primary)
+}
