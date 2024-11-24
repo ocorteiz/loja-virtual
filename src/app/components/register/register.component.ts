@@ -51,4 +51,8 @@ export class RegisterComponent {
       }
     });
   }
+
+  nextPage() {
+    this.router.navigate(["/login"])
+  }
 }

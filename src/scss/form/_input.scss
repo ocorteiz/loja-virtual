@@ -6,10 +6,11 @@ input {
   margin: 10px;
   width: 300px;
   border-radius: 15px;
-  padding: 10px;
+  padding: 15px 10px;
   border: 1px solid var(--primary);
-  box-shadow: 1px 1px 2px var(--primary-010);
+  box-shadow: 2px 2px 0px #f29f0587;
   transition: .5s;
+  font-size: 1.05em;
 
   &:focus {
     color: var(--primary);
@@ -21,5 +22,5 @@ input {
 }
 
 input::placeholder {
-  color: var(--primary)
+  color: #f29f0587
 }
