@@ -1,5 +1,9 @@
-<div class="produto">
-  <h2>{{ produto.nome }}</h2>
-  <p>{{ produto.descricao | slice:0:50}}...</p>
-  <span>{{ produto.preco | currency }}</span>
+<div class="produto" [routerLink]="['/produto', produto.id]">
+  <div class="info">
+    <h2>{{ produto.nome }}</h2>
+    <p>{{ produto.descricao | slice:0:50}}...</p>
+    <h2>{{ produto.preco | currency }}</h2>
+  </div>
+  <img *ngIf="produto.categoria == 'HAMBURGUER' " src="../../../assets/burguer.png" alt="">
+  <img *ngIf="produto.categoria == 'PIZZA' " src="../../../assets/pizza.jpg" alt="">
 </div>

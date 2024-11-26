@@ -6,7 +6,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
 @Component({
   selector: 'app-cart',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent],
+  imports: [HeaderComponent, FooterComponent, RouterLink],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss'
 })

@@ -1,0 +1,24 @@
+<app-header></app-header>
+<section class="back">
+  <div>
+    <i class="bi bi-arrow-left-short" [routerLink]="['/']"></i>
+    <p>DETALHES DO PRODUTO</p>
+  </div>
+  <hr>
+</section>
+<main>
+  <div class="item" *ngIf="produto">
+    <img *ngIf="produto.categoria == 'HAMBURGUER' " src="../../../assets/burguer.png" alt="">
+    <img *ngIf="produto.categoria == 'PIZZA' " src="../../../assets/pizza.jpg" alt="">
+    <div class="info">
+      <h1>{{ produto.nome }}</h1>
+      <p>{{ produto.descricao }}</p>
+      <h1>{{ produto.preco | currency }}</h1>
+    </div>
+  </div>
+  <button class="avancar">
+    <h2>AVANÇAR</h2>
+    <h2 >{{ produto.preco | currency }}</h2>
+  </button>
+</main>
+<app-footer></app-footer>

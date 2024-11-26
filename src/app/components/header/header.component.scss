@@ -14,17 +14,17 @@
 
     background-color: var(--primary);
 
-    div {
-      flex-direction: row;
-    }
-
     div.logo {
+      cursor: pointer;
+      flex-direction: row;
+
       img {
         width: 50px;
       }
     }
 
     div.sociais {
+      flex-direction: row;
       gap: 10px;
 
       i {

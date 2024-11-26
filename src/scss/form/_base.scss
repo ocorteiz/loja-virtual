@@ -10,7 +10,6 @@ div {
     width: 100%;
     background-color: var(--primary);
 
-
     border-radius: 0pc 30px 30px 0px;
     box-shadow: 1px 1px 3px #F29F05;
 
@@ -27,6 +26,7 @@ div {
 
   &.form {
     position: relative;
+    text-align: center;
 
     i {
       position: absolute;

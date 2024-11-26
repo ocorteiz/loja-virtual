@@ -48,5 +48,4 @@ export class HomeComponent implements OnInit {
   categorias(): string[] {
     return Object.keys(this.produtosPorCategoria);
   }
-
 }

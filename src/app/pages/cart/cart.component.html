@@ -1,6 +1,56 @@
 <app-header></app-header>
+<section class="back">
+  <div>
+    <i class="bi bi-arrow-left-short" [routerLink]="['/']"></i>
+    <p>CARRINHO</p>
+  </div>
+  <hr>
+</section>
 <main>
+  <div class="carrinho">
+
+    <div class="item">
+      <div class="card">
+        <img src="../../../assets/burguer.png" alt="Imagem de item de carrinho">
+        <div class="infos">
+          <h1>X-BACON</h1>
+          <p>+OVO</p>
+          <h2>R$25.00</h2>
+        </div>
+      </div>
+      <div class="quantidade">
+        <i class="bi bi-trash-fill"></i>
+        <span>1</span>
+        <i class="bi bi-plus-lg"></i>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <div class="card">
+        <img src="../../../assets/burguer.png" alt="Imagem de item de carrinho">
+        <div class="infos">
+          <h1>X-BACON</h1>
+          <p>+OVO</p>
+          <h2>R$25.00</h2>
+        </div>
+      </div>
+      <div class="quantidade">
+        <i class="bi bi-trash-fill"></i>
+        <span>1</span>
+        <i class="bi bi-plus-lg"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="adicionar">
+    <h2>ADICIONAR MAIS PRODUTOS</h2>
+  </button>
+  <button class="avancar">
+    <h2>AVANÇAR</h2>
+    <h2>R$25.00</h2>
+  </button>
 
 </main>
 <app-footer></app-footer>
-

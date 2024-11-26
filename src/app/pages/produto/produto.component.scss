@@ -1,0 +1,101 @@
+:host {
+
+  h1,
+  p {
+    color: var(--black);
+  }
+
+  section {
+    padding: 0% 30%;
+
+    div {
+      flex-direction: row;
+      justify-content: left;
+      gap: 20px;
+    }
+
+    i {
+      font-size: 2em;
+      cursor: pointer;
+    }
+
+    hr {
+      margin: 0;
+    }
+  }
+
+  main {
+    padding-bottom: 56px;
+    padding: 0% 30%;
+
+    .item {
+      max-width: 850px;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 50px;
+      margin: 40px 0px;
+
+      img {
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.463);
+      }
+
+      .info {
+
+        h1,
+        p,
+        span {
+          width: 100%;
+        }
+
+        p {
+          color: gray;
+          font-size: .9em;
+        }
+
+      }
+
+    }
+
+    button.avancar {
+      width: 100%;
+      padding: 15px 20px;
+      transition: .5s;
+      margin-bottom: 20px;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+    }
+
+  }
+
+  @media screen and (max-width: 576px) {
+
+    section {
+      padding: 0% 5%;
+    }
+
+    main {
+      padding: 0% 5%;
+      padding-bottom: 56px;
+
+      .item {
+        flex-direction: column;
+        margin: 20px 0px;
+        gap: 25px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+    }
+
+
+
+  }
+
+}
