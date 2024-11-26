@@ -7,49 +7,30 @@
   <hr>
 </section>
 <main>
-  <div class="carrinho">
-
-    <div class="item">
+  <div *ngIf="produtos.length > 0" class="carrinho">
+    <div *ngFor="let produto of produtos" class="item">
       <div class="card">
-        <img src="../../../assets/burguer.png" alt="Imagem de item de carrinho">
+        <img *ngIf="produto.categoria == 'HAMBURGUER' " src="../../../assets/burguer.png" alt="">
+        <img *ngIf="produto.categoria == 'PIZZA' " src="../../../assets/pizza.jpg" alt="">
         <div class="infos">
-          <h1>X-BACON</h1>
-          <p>+OVO</p>
-          <h2>R$25.00</h2>
+          <h1>{{produto.nome}}</h1>
+          <h2>{{produto.preco | currency}} </h2>
         </div>
       </div>
       <div class="quantidade">
-        <i class="bi bi-trash-fill"></i>
-        <span>1</span>
-        <i class="bi bi-plus-lg"></i>
+        <i class="bi bi-trash-fill" (click)="removerProduto(produto.id)"></i>
+        <span>{{produto.quantidade}}</span>
+        <i class="bi bi-plus-lg" (click)="incrementarQuantidade(produto)"></i>
       </div>
     </div>
-
-
-    <div class="item">
-      <div class="card">
-        <img src="../../../assets/burguer.png" alt="Imagem de item de carrinho">
-        <div class="infos">
-          <h1>X-BACON</h1>
-          <p>+OVO</p>
-          <h2>R$25.00</h2>
-        </div>
-      </div>
-      <div class="quantidade">
-        <i class="bi bi-trash-fill"></i>
-        <span>1</span>
-        <i class="bi bi-plus-lg"></i>
-      </div>
-    </div>
-
   </div>
 
-  <button class="adicionar">
-    <h2>ADICIONAR MAIS PRODUTOS</h2>
+  <button *ngIf="produtos.length > 0" class="adicionar">
+    <h2 [routerLink]="['/']">ADICIONAR MAIS PRODUTOS</h2>
   </button>
-  <button class="avancar">
+  <button *ngIf="produtos.length > 0" class="avancar">
     <h2>AVANÇAR</h2>
-    <h2>R$25.00</h2>
+    <h2>{{total | currency}}</h2>
   </button>
 
 </main>

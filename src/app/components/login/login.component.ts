@@ -36,13 +36,14 @@ export class LoginComponent {
 
     this.http.get<any[]>('http://localhost:3000/usuarios').subscribe({
       next: (users) => {
+        console.log('Usuários retornados da API:', users);
         const foundUser = users.find(
-          (user) => user.email === this.user.email && user.senha === this.user.senha
+          (user) => user.email == this.user.email && user.senha == this.user.senha
         );
-
+        console.log(foundUser)
         if (foundUser) {
           localStorage.setItem('user', JSON.stringify(foundUser));
-          this.router.navigate(['/home']);
+          this.router.navigate(['/']);
         } else {
           this.errors.push("Credenciais invalidas")
         }

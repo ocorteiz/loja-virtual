@@ -1,62 +1,94 @@
 {
   "usuarios": [
+    {
+      "id": "60b2",
+      "nome": "LUIS",
+      "email": "felipeccortez217@gmail.com",
+      "senha": "123",
+      "tipo": "cliente"
+    },
+    {
+      "id": "a0b9",
+      "nome": "Luis",
+      "email": "felipecortez217@gmail.com",
+      "senha": "123",
+      "tipo": "cliente"
+    }
   ],
   "produtos": [
     {
       "id": "a2332",
       "nome": "X-BACON",
       "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
-      "preco": 25.00,
-      "categoria": "HAMBURGUER"
+      "preco": 15,
+      "categoria": "HAMBURGUER",
+      "quantidade": 1
     },
     {
       "id": "313",
-      "nome": "X-BACON",
+      "nome": "X-EGG",
       "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
-      "preco": 25.00,
-      "categoria": "HAMBURGUER"
+      "preco": 20,
+      "categoria": "HAMBURGUER",
+      "quantidade": 1
     },
     {
       "id": "543",
-      "nome": "X-BACON",
+      "nome": "X-CALABRESA",
       "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
-      "preco": 25.00,
-      "categoria": "HAMBURGUER"
+      "preco": 20,
+      "categoria": "HAMBURGUER",
+      "quantidade": 1
     },
     {
       "id": "7657",
-      "nome": "X-BACON",
+      "nome": "X-TUDO",
       "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL/BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
-      "preco": 25.00,
-      "categoria": "HAMBURGUER"
+      "preco": 25,
+      "categoria": "HAMBURGUER",
+      "quantidade": 1
     },
     {
       "id": "46",
       "nome": "CALABRESA",
       "descricao": "CALABRESA/TOMATE/QUEIJO MUSSARELA/AZEITONA/OREGANO",
-      "preco": 50.00,
-      "categoria": "PIZZA"
+      "preco": 30,
+      "categoria": "PIZZA",
+      "quantidade": 1
     },
     {
       "id": "4687",
-      "nome": "CALABRESA",
+      "nome": "PORTUGUESA",
       "descricao": "CALABRESA/TOMATE/QUEIJO MUSSARELA/AZEITONA/OREGANO",
-      "preco": 50.00,
-      "categoria": "PIZZA"
+      "preco": 45,
+      "categoria": "PIZZA",
+      "quantidade": 1
     },
     {
       "id": "456",
-      "nome": "CALABRESA",
+      "nome": "NORDESTINA",
       "descricao": "CALABRESA/TOMATE/QUEIJO MUSSARELA/AZEITONA/OREGANO",
-      "preco": 50.00,
-      "categoria": "PIZZA"
+      "preco": 40,
+      "categoria": "PIZZA",
+      "quantidade": 1
     },
     {
       "id": "7978",
-      "nome": "CALABRESA",
+      "nome": "MUSSARELA",
       "descricao": "CALABRESA/TOMATE/QUEIJO MUSSARELA/AZEITONA/OREGANO",
-      "preco": 50.00,
-      "categoria": "PIZZA"
+      "preco": 50,
+      "categoria": "PIZZA",
+      "quantidade": 1
+    }
+  ],
+  "carrinho": [
+    {
+      "id": "1732656714255591",
+      "nome": "X-BACON",
+      "descricao": "BLEND 150G/CHEDDAAR FATIA/BACON/CEBOLA CARAMELISADA/MOLHO ESPECIAL",
+      "preco": 15,
+      "categoria": "HAMBURGUER",
+      "quantidade": 1
     }
   ]
 }

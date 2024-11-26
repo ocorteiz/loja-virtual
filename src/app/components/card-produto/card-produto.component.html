@@ -1,4 +1,4 @@
-<div class="produto" [routerLink]="['/produto', produto.id]">
+<div class="produto" (click)="redirecionar(produto.id)">
   <div class="info">
     <h2>{{ produto.nome }}</h2>
     <p>{{ produto.descricao | slice:0:50}}...</p>

@@ -38,8 +38,9 @@
 
       .item {
         width: 100%;
-        margin: 20px;
+        margin: 20px 0px;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
 
         .card {
@@ -69,6 +70,7 @@
         gap: 30px;
         padding: 5px;
         border-radius: 10px;
+        cursor: pointer;
 
         border: 1px solid rgb(165, 165, 165);
 
@@ -78,7 +80,6 @@
         }
 
         .bi-plus-lg {
-          cursor: pointer;
           color: var(--primary);
         }
       }
@@ -116,6 +117,18 @@
         font-weight: bold;
       }
 
+    }
+
+  }
+
+  @media screen and (max-width: 576px) {
+
+    main, section {
+      padding: 0% 5%;
+    }
+
+    .item {
+      margin: 0;
     }
 
   }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HeaderComponent } from "../../components/header/header.component";
 import { FooterComponent } from "../../components/footer/footer.component";
 import { HttpClient } from '@angular/common/http';
@@ -13,9 +13,9 @@ import { CommonModule } from '@angular/common';
   styleUrl: './produto.component.scss'
 })
 export class ProdutoComponent implements OnInit {
-  produto: any;
+  @Input() produto: any;
 
-  constructor(private http: HttpClient, private route: ActivatedRoute) { }
+  constructor(private http: HttpClient, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
@@ -31,6 +31,25 @@ export class ProdutoComponent implements OnInit {
         console.error('Erro ao tentar carregar dados');
       }
     });
+  }
+
+  adicionarAoCarrinho(): void {
+    if(this.produto) {
+      const produtoComId = {
+        ...this.produto,
+        id: Date.now() + Math.floor(Math.random() * 1000).toString(), // Gera um ID único com base no tempo atual e número aleatório
+      };
+
+      this.http.post('http://localhost:3000/carrinho', produtoComId).subscribe({
+        next: () => {
+          console.log('Produto adicionado ao carrinho')
+          this.router.navigate(['/carrinho'])
+        },
+        error: (error) => {
+          console.error('Erro ao tentar adicionar produto: ', error);
+        }
+      })
+    }
   }
 
 }
